@@ -1,3 +1,5 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 var work = document.getElementById("work");
 var about = document.getElementById("about");
 var aboutText = document.getElementById("about-text");
@@ -44,6 +46,7 @@ $('#backgroundCarousel').on('slid.bs.carousel', function () {
     var bio = document.getElementById("bio");
     var indicators = document.getElementsByClassName("carousel-indicators")[0].getElementsByTagName("li");
     var slides = document.getElementsByClassName("carousel-item");
+    //change opacity by changing the fourth number in the parentheses
     const colors = [" rgba(0, 0, 0,  .3)"," rgba(0, 0, 0,  0)"," rgba(0, 0, 0,  .7)"];
     
             
@@ -65,18 +68,6 @@ $('#backgroundCarousel').on('slid.bs.carousel', function () {
         }
     }
 })
-
-
-// var myCarousel = document.querySelector('#backgroundCarousel')
-// var carousel = new bootstrap.Carousel(myCarousel, {
-//   interval: 2000,
-//   wrap: false
-// })
-
-// 10 second intervals
-// $('.carousel').carousel({
-//     interval: 1000
-// })
 
 var $carousel = $('#backgroundCarousel');
 $carousel.carousel();
