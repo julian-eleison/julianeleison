@@ -1,4 +1,4 @@
-document.addEventListener('contextmenu', event => event.preventDefault());
+// document.addEventListener('contextmenu', event => event.preventDefault());
 
 var work = document.getElementById("work");
 var about = document.getElementById("about");
