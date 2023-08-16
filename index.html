@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noimageindex">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Julien Eleison</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+  </head>
+
+  <body>
+    <!-- BOOTSTRAP STUFF -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+    <main id="container">
+
+     
+
+
+      <!-- CAROUSEL -->
+      <div id="backgroundCarousel" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="false">
+        <div class="carousel-inner">
+          <div id="first-slide" class="carousel-item active">
+            <img class="d-block w-100" src="1.png" decoding="sync" alt="First
+              slide">
+          </div>
+          <div id="second-slide" class="carousel-item">
+            <img class="d-block w-100" src="2.png" decoding="sync" alt="Second
+              slide">
+          </div>
+          <div id="third-slide" class="carousel-item">
+            <img class="d-block w-100" src="3.png" decoding="sync" alt="Third
+              slide">
+          </div>
+        </div>
+      </div>
+
+      <!-- BIO -->
+
+      <!-- TOGGLE BACKGROUND OPACITY HERE -->
+      <!-- the very last number is the opacity. 0 is completely transparent and 1 is completely opaque  -->
+      <div id="bio">
+        <!-- name -->
+        <div class="text" id="name">
+          Julian Eleison
+        </div>
+
+        <!-- work/about links -->
+        <div class="linksContainer">
+          <div id="links">
+            <a id="about" class="accordion">About</a>
+            <a id="work" class="accordion">Work</a>
+          </div>
+        </div>
+
+        <!-- work/about text -->
+        <div class="panel-container">
+
+          <div id="about-text" class="panel text">
+            <p>Julian Eleison is a digital artist
+              <br>
+               currently based in London</p>
+          </div>
+
+          <div id="work-text" class="panel text">
+            <p>For a larger selection of recent work, please email me at <a style = "text-decoration: underline; text-decoration-thickness: 1px;"
+                href="mailto:studio@julianeleison.com">studio@julianeleison.com</a>
+              to book an in-person studio visit</p>
+          </div>
+        </div>
+
+    
+        <!-- arrows and dots -->
+        <nav class="nav">
+
+          <div>
+            <a class="prev_button nav_button" id="prev_button" href="#backgroundCarousel" role="button" data-slide="prev" onclick = "stopInterval()"> ←
+            </a>
+          </div>
+     
+          <ol class="carousel-indicators">
+            <li data-target="#backgroundCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#backgroundCarousel" data-slide-to="1" ></li>
+            <li data-target="#backgroundCarousel" data-slide-to="2" ></li>
+          </ol>
+      
+          <div>
+            <a class="next_button nav_button" href="#backgroundCarousel" role="button" data-slide="next"  onclick = "stopInterval()"> →
+            </a>
+          </div>
+        </nav>
+      </div>
+    </main>
+    <script src="index.js"></script>
+
+  </body>
+
+</html>

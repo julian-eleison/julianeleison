@@ -1,0 +1,339 @@
+
+/* FONTS */
+@font-face {
+    font-family: baskerville;
+    src: url(BASKVILL.ttf);
+}
+
+/* safari z-index bug */
+*:not(html) {
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+html, body {
+    background-color: black !important;
+    font-family: "baskerville" !important;
+    font-size: 22px;
+    height: 100%;
+    overflow: hidden;
+}
+
+p{
+    margin: 0 !important;
+}
+
+a{
+    color: inherit !important;
+    transition: 0.1s;
+}
+
+a:hover{
+    opacity: 50%;
+}
+
+#container{
+    background-color: black !important;
+    position: relative;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+/* BIO */
+#bio{
+    position: absolute;
+    color: white;
+    opacity: .99 !important;
+    line-height: 1.2em;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 250px;
+    min-width: 100px;
+    text-align: center;
+    padding: 1em 0;
+    background-color:  rgba(0, 0, 0,  .4);
+    transition: background-color .6s;
+}
+
+.accordion {
+    cursor:pointer;
+} 
+  
+/* Note: hidden by default */
+.panel {
+    line-height: 1.3em;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out !important;
+}
+
+#name{
+    font-size: 21px;
+    padding-top: .4em;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
+}
+
+#about,#work{
+    font-size: 10pt;
+}
+
+
+#about-text{
+    height: auto !important;
+    font-size: 10pt !important;
+}
+
+#work-text{
+    -webkit-hyphens: auto !important;
+    hyphens: auto;
+    height: auto;
+    font-size: 10pt;
+}
+
+#email{
+    text-decoration: underline !important;
+}
+
+.linksContainer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#links{
+    margin: 1px 0 0 0 !important;
+    display: flex;
+    justify-content: space-between;
+    width: 86px;
+}
+
+/* indicators */
+ol.carousel-indicators li{
+    background-color: transparent;
+
+}
+
+/* individual indicators */
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  width: .2em;
+  height: .2em;
+  margin: .2em;
+  border-radius: 100px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+ol.carousel-indicators{
+    vertical-align: middle;
+    position: static !important;
+    height: 100% !important;
+}
+
+.nav{
+    display: block;
+    justify-content: center;
+    padding-top: .2em;
+}
+
+#arrow_container{
+    display: flex;
+    justify-content: space-between;
+    width: 8%;
+    margin-top: .6em;
+    padding-right: 2em;
+    float: right;
+}
+
+.next_button, .prev_button{
+    padding: 0 !important;
+    margin: 0px !important;
+    font-size: 18px;
+
+}
+
+.prev_button:active, .next_button:active{
+    font-size: 18px;
+}
+
+.prev_button:hover, .next_button:hover{
+    cursor: pointer;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+ol.carousel-indicators li.active {
+    opacity: 100%;
+}
+
+.carousel-indicators {
+    margin: .24em .6em 0 .6em !important;    
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* CAROUSEL */
+#backgroundCarousel{
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
+}
+
+.carousel-item {
+	transition: -webkit-transform 0.5s ease;
+	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+	-webkit-backface-visibility: visible;
+	        backface-visibility: visible;
+}
+
+
+
+
+
+/* RESPONSIVE QUERIES */
+/* @media only screen and (max-width: 700px){
+
+    #bio{
+        left: 50%;
+        top: 40% !important;
+        min-width:350px!important;
+        line-height: 1.6em;
+    }
+
+
+    .carousel-indicators {
+        margin: .5em .8em 0 .8em !important;    
+        }
+
+
+    #bio{
+        line-height: 1.6em;
+    }
+
+    #about-text{
+        height: 60px;
+    }
+
+    #work-text{
+        -webkit-hyphens: auto !important;
+        hyphens: auto;
+        height: 90px;
+    }
+} */
+
+
+/* MOBILE */
+@media only screen and (max-width: 480px){
+    .carousel-indicators {
+        margin: .5em .8em 0 .8em !important;    
+    }
+
+    a:hover{
+        text-decoration: none !important;
+        opacity: 100%;
+    }
+
+    .prev_button:hover, .next_button:hover{
+        font-size: 22px;
+    }
+
+    .prev_button:active, .next_button:active{
+        font-size: 32px;
+    }
+
+    html{
+        margin: 0;
+        padding: 0;
+    }
+
+    .body{
+        overflow: scroll;
+        font-size: 20px !important;
+    }
+/*     
+    #work, #about, #work-text, #about-text{
+        font-size: 20px;
+    } */
+
+    #links{
+        margin: 1px 0 0 0 !important;
+        display: flex;
+        justify-content: space-between;
+        width: 78px;
+    }    
+
+    #backgroundCarousel{
+        transform:  rotate(90deg) translate(-50%, -50%)!important;
+        transform-origin: top left!important;
+        height: 100vw !important;
+        width: 100vh !important;
+    }
+
+    .carousel-inner, .carousel-item, img{
+        height: 100vw !important;
+        width: 100vh !important;
+    }
+
+    #bio{
+        transform:  rotate(90deg) translate(-50%, -50%)!important;
+        transform-origin: top left!important;
+        left: 50%;
+        top: 45% !important;
+        min-width:150px!important;
+        line-height: 1.6em;
+    }
+
+    #about-text{
+        height: 60px;
+        /* font-size: 20px !important; */
+    }
+
+    #work-text{
+        -webkit-hyphens: auto !important;
+        hyphens: auto;
+        /* font-size: 20px; */
+        height: 90px;
+    }
+
+}
+
+/* if mobile and in landscape mode */
+@media only screen and (max-width: 480px) and (orientation: landscape){
+
+    #backgroundCarousel{
+        transform:  rotate(0deg) translate(-50%, -50%)!important;
+        transform-origin: top left!important;
+        height: 100vh !important;
+        width: 100vw !important;
+    }
+
+    .carousel-inner, .carousel-item, img{
+        height: 100vh !important;
+        width: 100vw !important;
+    }
+
+    #bio{
+        transform:  rotate(0deg) translate(-50%, -50%)!important;
+        transform-origin: top left!important;
+        left: 50%;
+        top: 45% !important;
+        min-width:350px!important;
+        line-height: 1.6em;
+    }
+}
+
+
