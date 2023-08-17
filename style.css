@@ -168,7 +168,7 @@ ol.carousel-indicators{
     display: flex;
     justify-content: space-between;
     padding-top: 0em;
-    width: 50%;
+    width: 108px;
 }
 
 #arrow_container{
