@@ -47,7 +47,7 @@ $('#backgroundCarousel').on('slid.bs.carousel', function () {
     var indicators = document.getElementsByClassName("carousel-indicators")[0].getElementsByTagName("li");
     var slides = document.getElementsByClassName("carousel-item");
     //change opacity by changing the fourth number in the parentheses
-    const colors = [" rgba(0, 0, 0,  .7)"," rgba(0, 0, 0,  .15)"," rgba(0, 0, 0,  .7)"];
+    const colors = [" rgba(0, 0, 0,  .7)"," rgba(0, 0, 0,  .7)"," rgba(0, 0, 0,  .7)"];
     
             
     for(let i=0; i<slides.length; i++){
