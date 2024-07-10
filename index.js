@@ -1,11 +1,10 @@
-// document.addEventListener('contextmenu', event => event.preventDefault());
-
 var work = document.getElementById("work");
 var about = document.getElementById("about");
 var aboutText = document.getElementById("about-text");
 var workText = document.getElementById("work-text");
 var open = true;
 
+//this disables the right clicking
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 
 work.addEventListener("click", function () {
@@ -48,7 +47,7 @@ $("#backgroundCarousel").on("slid.bs.carousel", function () {
 
   //change opacity by changing the fourth number in the parentheses
   const colors = [
-    " rgba(0, 0, 0,  .1)",
+    " rgba(0, 0, 0,  1)",
     " rgba(0, 0, 0,  .7)",
     " rgba(0, 0, 0,  .7)",
     " rgba(0, 0, 0,  1)",
