@@ -31,11 +31,9 @@
 
     <main id="container">
 
-
-
-
       <!-- CAROUSEL -->
-      <div id="backgroundCarousel" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="false">
+      <div id="backgroundCarousel" class="carousel slide" data-ride="carousel"
+        data-interval="10000" data-pause="false">
         <div class="carousel-inner">
           <div id="first-slide" class="carousel-item active">
             <img class="d-block w-100" src="1.png" decoding="sync" alt="First
@@ -43,18 +41,18 @@
           </div>
 
           <!-- uncomment the each div below to bring back additional slides-->
-          <!-- <div id="second-slide" class="carousel-item">
+          <div id="second-slide" class="carousel-item">
             <img class="d-block w-100" src="2.png" decoding="sync" alt="Second
               slide">
-          </div> -->
-          <!-- <div id="third-slide" class="carousel-item">
+          </div>
+          <div id="third-slide" class="carousel-item">
             <img class="d-block w-100" src="3.png" decoding="sync" alt="Third
               slide">
-          </div> -->
-          <!-- <div id="fourth-slide" class="carousel-item">
-            <img class="d-block w-100" src="3.png" decoding="sync" alt="Third
+          </div>
+          <div id="fourth-slide" class="carousel-item">
+            <img class="d-block w-100" src="4.png" decoding="sync" alt="Third
               slide">
-          </div> -->
+          </div>
         </div>
       </div>
 
@@ -82,19 +80,18 @@
           <div id="about-text" class="panel text">
             <p>Julian Eleison is a digital
               <br>
-               artist based in London</p>
+              artist based in London</p>
           </div>
 
           <div id="work-text" class="panel text">
-            <div id="inner-work-text">  To arrange a studio visit,
+            <div id="inner-work-text"> To arrange a studio visit,
               <br>
-                please email <a style = "text-decoration: underline; text-decoration-thickness: 1px;"
-              href="mailto:studio@julianeleison.com">studio@julianeleison.com</a>
+              please email <a
+                style="text-decoration: underline; text-decoration-thickness: 1px;"
+                href="mailto:studio@julianeleison.com">studio@julianeleison.com</a>
             </div>
 
-
-
- <!-- Alternative bio text 
+            <!-- Alternative bio text 
             
             <div id="work-text" class="panel text">
             <div id="inner-work-text">  For a selection of recent 
@@ -107,42 +104,42 @@
             
             -->
 
+          </div>
 
+          <!-- arrows and dots -->
+          <nav class="nav">
 
-            
+            <!-- uncomment the div below to bring back the left arrow -->
+            <div>
+              <a class="prev_button nav_button" id="prev_button"
+                href="#backgroundCarousel" role="button" data-slide="prev"
+                onclick="stopInterval()"> ←
+              </a>
+            </div>
+            <div>
+
+              <!-- uncomment the ol below to bring back the dots -->
+              <ol class="carousel-indicators">
+                <li data-target="#backgroundCarousel" data-slide-to="0"
+                  class="active"></li>
+                <li data-target="#backgroundCarousel" data-slide-to="1"></li>
+                <li data-target="#backgroundCarousel" data-slide-to="2"></li>
+                <li data-target="#backgroundCarousel" data-slide-to="3"></li>
+
+              </ol>
+            </div>
+
+            <!-- uncomment the div below to bring back the right arrow -->
+            <div>
+              <a class="next_button nav_button" href="#backgroundCarousel"
+                role="button" data-slide="next" onclick="stopInterval()"> →
+              </a>
+            </div>
+          </nav>
         </div>
+      </main>
+      <script src="index.js"></script>
 
+    </body>
 
-        <!-- arrows and dots -->
-        <nav class="nav">
-
-          <!-- uncomment the div below to bring back the left arrow -->
-          <!-- <div>
-            <a class="prev_button nav_button" id="prev_button" href="#backgroundCarousel" role="button" data-slide="prev" onclick = "stopInterval()"> ←
-            </a>
-          </div> -->
-          <div>
-
-          <!-- uncomment the ol below to bring back the dots -->
-          <!-- <ol class="carousel-indicators">
-            <li data-target="#backgroundCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#backgroundCarousel" data-slide-to="1" ></li>
-            <li data-target="#backgroundCarousel" data-slide-to="2" ></li>
-            <li data-target="#backgroundCarousel" data-slide-to="3" ></li>
-
-          </ol> -->
-        </div>
-
-        <!-- uncomment the div below to bring back the right arrow -->
-          <!-- <div>
-            <a class="next_button nav_button" href="#backgroundCarousel" role="button" data-slide="next"  onclick = "stopInterval()"> →
-            </a>
-          </div> -->
-        </nav>
-      </div>
-    </main>
-    <script src="index.js"></script>
-
-  </body>
-
-</html>
+  </html>
