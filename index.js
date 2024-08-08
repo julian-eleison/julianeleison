@@ -49,7 +49,7 @@ $("#backgroundCarousel").on("slid.bs.carousel", function () {
   const colors = [
     " rgba(0, 0, 0,  .02)",
     " rgba(0, 0, 0,  .04)",
-    " rgba(0, 0, 0,  .04)",
+    " rgba(0, 0, 0,  .02)",
     " rgba(0, 0, 0,  .02)",
   ];
 
