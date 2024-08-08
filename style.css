@@ -54,7 +54,7 @@ a:hover {
   min-width: 100px;
   text-align: center;
   padding: 1em 0;
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: rgba(0, 0, 0, 0.02);
   transition: background-color 0.6s;
 }
 
