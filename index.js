@@ -50,7 +50,7 @@ $("#backgroundCarousel").on("slid.bs.carousel", function () {
     " rgba(0, 0, 0,  .02)",
     " rgba(0, 0, 0,  .04)",
     " rgba(0, 0, 0,  .02)",
-    " rgba(0, 0, 0,  .02)",
+    " rgba(0, 0, 0,  .03)",
   ];
 
   for (let i = 0; i < slides.length; i++) {
