@@ -48,9 +48,9 @@ $("#backgroundCarousel").on("slid.bs.carousel", function () {
   //change opacity by changing the fourth number in the parentheses
   const colors = [
     " rgba(0, 0, 0,  .02)",
-    " rgba(0, 0, 0,  .02)",
-    " rgba(0, 0, 0,  .02)",
-    " rgba(0, 0, 0,  .02)",
+    " rgba(0, 0, 0,  .04)",
+    " rgba(0, 0, 0,  .04)",
+    " rgba(0, 0, 0,  .04)",
   ];
 
   for (let i = 0; i < slides.length; i++) {
